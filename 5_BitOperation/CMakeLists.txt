@@ -1,0 +1,4 @@
+project(5-BitOperation)
+
+add_executable(Leetcode_136_SingleNum Leetcode_136_SingleNum.cpp)
+add_executable(Leetcode_260_SigleNumIII Leetcode_260_SigleNumIII.cpp)

@@ -6,3 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(1_Tree)
 add_subdirectory(2_BackTracing)
+add_subdirectory(3_Sort)
+add_subdirectory(4_Binary)
+add_subdirectory(5_BitOperation)
