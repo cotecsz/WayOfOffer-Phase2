@@ -38,8 +38,10 @@ private:
         int p1 = low;
         int p2 = mid + 1;
         while (p1 <= mid && p2 <= high){
-            res += nums[p1] > nums[p2] ? (high - p2 + 1) : 0;
-            helper[i++] = nums[p1] < nums[p2] ? nums[p1++] :nums[p2++];
+            // 当左侧数大于右侧数时，逆序对个数为 mid - p1 + 1 个
+            res += nums[p1] > nums[p2] ? (mid - p1 + 1) : 0;
+            // 当左右两侧数相等时，将右侧数先放入额外空间中，看左侧数是否比右侧数构成逆序对
+            helper[i++] = nums[p1] <= nums[p2] ? nums[p1++] :nums[p2++];
         }
 
         while (p1 <= mid){
@@ -53,6 +55,12 @@ private:
             nums[low+i] = helper[i];
         }
 
+        for (int j = 0; j < high-low+1; j++) {
+            cout << nums[low + j] << " ";
+        }
+        cout << "res = " <<res << " ";
+
+        cout << endl;
         delete [] helper;
         return res;
     }
@@ -60,9 +68,12 @@ private:
 
 int main(){
     vector<int> nums {7, 5, 6, 4};
+    vector<int> nums1 {1, 3, 2, 3, 1};
+
 
     Solution sol;
     assert(sol.reversePairs(nums) == 5);
 
+    int res = sol.reversePairs(nums1);
     return 0;
 }
