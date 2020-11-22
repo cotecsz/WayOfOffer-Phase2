@@ -54,6 +54,15 @@ private:
             helper[i++] = arr[p2++];
         }
 
+        for (i = 0; i < high - low + 1; i++){
+            arr[low+i] = helper[i];             // 将 helper [0, high-low+1) 的值赋给 arr[low, low + high -low+1)
+        }
+
+        for (int j = 0; j < high-low+1; j++) {
+            cout << arr[low+ j] << " ";
+        }
+        cout << endl;
+
         delete [] helper;
         return res;
     }
@@ -61,10 +70,10 @@ private:
 
 
 int main(){
-    int arr[] = {1, 3, 5, 2, 4, 6};
+    int arr[] = {7, 2, 3, 6, 8, 3, 4, 7};
 
     Solution sol;
-    int res = sol.littleSum(arr, 6);
+    int res = sol.littleSum(arr, 8);
 
     cout << res << endl;
     return 0;
