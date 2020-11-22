@@ -6,7 +6,13 @@
 #include <iostream>
 using namespace std;
 
-
+/*
+ * 归并排序：
+ *    1. 排序左侧数组 [low, mid]
+ *    2. 排序右侧数组 [mid + 1， high]
+ *    3. 合并
+ *    
+ */
 class Solution{
 public:
     void mergeSort(int arr[], int length){
