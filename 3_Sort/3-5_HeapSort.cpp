@@ -13,6 +13,10 @@ public:
             heapInsert(arr, i);
         }
 
+        // 优化，从后往前进行堆插入，使得复杂度逼近O(C*N)
+//        for (int i = length-1; i >= 0; i--){
+//            heapInsert(arr, i);
+//        }
         int heapSize = length;
         swap( arr[0], arr[--heapSize]);
         while (heapSize > 0){
