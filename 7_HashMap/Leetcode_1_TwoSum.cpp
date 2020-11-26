@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <unordered_map>
+#include <assert.h>
 using namespace std;
 
 /*
@@ -30,6 +31,11 @@ public:
 };
 
 int main(){
+    vector<int> nums {1, 2, 5, 7 ,9};
+    int target = 10;
+    vector<int> res {0, 4};
 
+    Solution sol;
+    assert(sol.twoSum(nums, target) == res);
     return 0;
 }
