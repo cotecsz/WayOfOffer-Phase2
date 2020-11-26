@@ -4,4 +4,6 @@ project(7_HashMap)
 add_executable(Leetcode_242_ValidAnagram Leetcode_242_ValidAnagram.cpp)
 add_executable(Leetcode_349_IntersectionOfTwoArray Leetcode_349_IntersectionOfTwoArray.cpp)
 add_executable(Leetcode_202_HappyNum Leetcode_202_HappyNum.cpp)
+
 add_executable(Leetcode_1_TwoSum Leetcode_1_TwoSum.cpp)
+add_executable(Leetcode_15_3Sum Leetcode_15_3Sum.cpp)
