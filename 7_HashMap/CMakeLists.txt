@@ -1,0 +1,5 @@
+project(7_HashMap)
+
+
+add_executable(Leetcode_242_ValidAnagram Leetcode_242_ValidAnagram.cpp)
+add_executable(Leetcode_349_IntersectionOfTwoArray Leetcode_349_IntersectionOfTwoArray.cpp)
