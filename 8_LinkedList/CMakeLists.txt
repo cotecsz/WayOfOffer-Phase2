@@ -1,0 +1,3 @@
+project(8_LinkedList)
+
+add_executable(Leetcode_203_RemoveLinkedListElement Leetcode_203_RemoveLinkedListElement.cpp)
