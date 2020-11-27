@@ -7,3 +7,4 @@ add_executable(Leetcode_202_HappyNum Leetcode_202_HappyNum.cpp)
 
 add_executable(Leetcode_1_TwoSum Leetcode_1_TwoSum.cpp)
 add_executable(Leetcode_15_3Sum Leetcode_15_3Sum.cpp)
+add_executable(Leetcode_18_4Sum Leetcode_18_4Sum.cpp)
