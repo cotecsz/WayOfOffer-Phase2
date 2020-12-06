@@ -7,3 +7,5 @@ add_executable(Leetcode_206_ReverseLinkedList Leetcode_206_ReverseLinkedList.cpp
 
 add_executable(Leetcode_2_AddTwoNumber Leetcode_2_AddTwoNumber.cpp)
 add_executable(Leetcode_445_AddTwoNumbersII Leetcode_445_AddTwoNumbersII.cpp)
+
+add_executable(Leetcode_138_CopyListRandomPointer Leetcode_138_CopyListRandomPointer.cpp)
