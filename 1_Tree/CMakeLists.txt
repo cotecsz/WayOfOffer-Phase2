@@ -1,0 +1,5 @@
+project(1_Tree)
+
+add_executable(Leetcode_783_MinDistanceBetweenBSTNodes Leetcode_783_MinDistanceBetweenBSTNodes.cpp)
+add_executable(1-1_SucceedNodeInBinaryTree 1-1_SucceedNodeInBinaryTree.cpp)
+add_executable(Leetcode_297_SerializeAndDeserializeBinaryTree Leetcode_297_SerializeAndDeserializeBinaryTree.cpp)
