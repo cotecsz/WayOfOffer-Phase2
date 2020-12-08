@@ -6,6 +6,7 @@
 #include <string>
 #include <sstream>
 #include <queue>
+#include <stack>
 
 using namespace std;
 
@@ -69,6 +70,31 @@ private:
     }
 };
 
+void printTree(TreeNode* head){
+    if (head == nullptr)    return ;
+
+    vector<int> res;
+    stack<TreeNode*> st;
+    TreeNode* cur = head;
+    while (!st.empty() || cur != nullptr){
+        if (cur != nullptr){
+            st.push(cur);
+            cur = cur->left;
+        }
+        else{
+            cur = st.top();     st.pop();
+            res.push_back(cur->val);
+
+            cur = cur->right;
+        }
+    }
+
+    for (auto n : res){
+        cout << n << " ";
+    }
+    cout << endl;
+
+}
 
 int main(){
 
@@ -86,11 +112,13 @@ int main(){
     b.right = &e;
     c.left = &f;
     c.right = &g;
+    printTree(&a);
 
     Codec cod;
     string res = cod.serialize(&a);
     cout << res << endl;
 
     TreeNode* head = cod.deserialize(res);
+    printTree(head);
     return 0;
 }
