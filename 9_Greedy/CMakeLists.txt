@@ -2,3 +2,4 @@ project(9-Greedy)
 
 add_executable(Leetcode_1353_MaxiumNumberEvement Leetcode_1353_MaxiumNumberEvement.cpp)
 add_executable(Leetcode_122_BestTimeBuySellStockII Leetcode_122_BestTimeBuySellStockII.cpp)
+add_executable(Leetcode_55_JumpGame Leetcode_55_JumpGame.cpp)
